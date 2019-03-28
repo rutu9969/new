@@ -1,0 +1,123 @@
+1) go to cmd and type
+npm install -g @angular/cli@6.2.8
+
+2)got to google and Download zip file of vscode 64bit, extract and run code.exe
+
+// this command is to open console
+3)Press ctrl + `
+
+
+//this command is useful for every code
+4)type
+C:\Windows\System32\cmd.exe /k "C:\Program Files\nodejs\nodevars.bat"
+
+5)type
+ng new MyAngularApp
+
+6)type
+cd MyAngularApp
+
+7)type
+ng serve
+
+8)after succesfull run open browser and type http://localhost:4200
+proper indentation 
+alt+shift+f
+
+9)ng new first-app --minimal
+ng serve --open
+http://localhost:4200
+
+
+10)to terminate
+ctr+c
+11)to start again
+npm start
+11)to create component ng generate component componentName
+or also we can give initials like
+ng g c componentNAME
+
+12)app.module.ts
+const routes: Routes=[
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'home', component:HomeComponent},
+  {path:'about',component:AboutComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'**',redirectTo:'/home',pathMatch:'full'}
+]; 
+13)imports: [
+    BrowserModule,RouterModule.forRoot(routes)
+  ],
+
+14)app.component.html
+ <router-outlet></router-outlet>
+
+ <li *ngFor='let item for menu'>{{item}}</li>
+
+14)app.component.ts
+ menu=['Home','About','Contact'];
+
+15)npm install bootstrap
+angular.json
+line no 25or 26 
+styles
+"node_modules/bootstrap/dist/css/bootstrap.css",
+scripts
+"node_modules/bootstrap/dist/js/bootstrap.js"
+
+
+16)//bootstarp colors botton
+Bootstrap button color
+Bootstrap Buttons
+btn
+btn-default
+btn-primary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-link
+
+
+17)<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+
+
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+
+<button type="button" class="btn btn-primary active">Active Primary</button>
+<button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+
+
+
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+ 
+
+
+
+
+
+SORTINg LOGIC
+sortbyname(){
+this.employeeArr.sort((a,b)=>a.employeeNAme.localCompare(b.employeeName.valueof()));
+return this.employeearr}
